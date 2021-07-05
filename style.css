@@ -1,14 +1,14 @@
-@font-face{
+@font-face {
     box-sizing: border-box;
-    font-family: 'cerapro';
+    font-family: "cerapro";
     src: url(font/cera_pro_bold-webfont.woff);
     font-style: normal;
 }
 
 /* Color Style */
 :root {
-    --main-bg: #E1E5EA;
-    --footer: #E1E5EA;
+    --main-bg: #e1e5ea;
+    --footer: #e1e5ea;
     --color: rgb(27, 27, 27);
     --red: crimson;
 }
@@ -27,7 +27,6 @@ body {
 }
 
 .max-width {
-
     max-width: 1300px;
     padding: 0 40px;
     margin: auto;
@@ -86,7 +85,7 @@ body {
 }
 
 .nav.stick .logo span {
-    color: white;
+    color: var(--color);
     transition: all 0.4s ease;
 }
 
@@ -130,6 +129,7 @@ body {
 }
 
 .content .heading {
+    padding-top: 70px;
     font-size: 48px;
 }
 
@@ -144,6 +144,7 @@ hr {
     margin: 20px auto;
     text-align: center;
     justify-content: center;
+    border: 1px solid var(--red);
 }
 
 .content .member .member_card {
@@ -158,13 +159,17 @@ hr {
 }
 
 .content .member .member_card .image {
-    flex: 1 1 50px;
+    flex: 1 1;
     width: 300px;
-    height: 100px;
+    height: 300px;
+}
+
+.content .member .member_card .image img {
+    height: 300px;
 }
 
 .content .member .member_card .info {
-    flex: 1 1 50px;
+    flex: 1 1;
 }
 
 .content .member .member_card .name {
@@ -174,18 +179,22 @@ hr {
 
 .content .member #fajar {
     text-align: left;
+    margin-left: 100px;
 }
 
 .content .member #rahmat {
     text-align: right;
+    margin-right: 100px;
 }
 
 .content .member #reyhan {
     text-align: left;
+    margin-left: 100px;
 }
 
 .content .member #julian {
     text-align: right;
+    margin-right: 100px;
 }
 
 /* end of content */
@@ -203,12 +212,12 @@ footer {
     text-align: left;
 }
 
-.logo-footer:hover{
+.logo-footer:hover {
     color: rgb(83, 170, 251);
-    cursor: pointer
+    cursor: pointer;
 }
 
-.about-us{
+.about-us {
     text-align: center;
     position: relative;
     bottom: 80px;
