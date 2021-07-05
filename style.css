@@ -1,0 +1,245 @@
+@font-face{
+    box-sizing: border-box;
+    font-family: 'cerapro';
+    src: url(font/cera_pro_bold-webfont.woff);
+    font-style: normal;
+}
+
+/* Color Style */
+:root {
+    --main-bg: #E1E5EA;
+    --footer: #E1E5EA;
+    --color: rgb(27, 27, 27);
+    --red: crimson;
+}
+
+/* all styling  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: cerapro;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+.max-width {
+
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+/* nav styling */
+.nav {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 889;
+    transition: all 0.4s ease;
+}
+
+.nav .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.nav .logo span {
+    color: var(--red);
+}
+
+.nav .menu li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.nav .menu li a {
+    text-decoration: none;
+    padding: 6px 20px;
+    color: white;
+    border-radius: 20px;
+    font: 20px;
+    transition: ease-out 0.4s;
+}
+
+.nav .menu li a:hover {
+    color: var(--red);
+    transition: all 0.4s ease;
+}
+
+/* stick nav  */
+.nav.stick {
+    padding: 15px 0;
+    background-color: var(--red);
+    transition: all 0.4s ease;
+}
+
+.nav.stick .logo span {
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.nav.stick .menu li a:hover {
+    color: black;
+}
+
+/* end of nav styling */
+
+/* home styling  */
+.home {
+    display: flex;
+    background: url("image/home.jpeg") no-repeat center;
+    color: white;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 110px;
+}
+
+.home .home-content .text-1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.home .home-content .text-2 {
+    font-size: 70px;
+    font-weight: 600;
+}
+/* end of home styling */
+
+/* start of content */
+
+.content {
+    text-align: center;
+    color: var(--main-bg);
+    background-color: var(--color);
+    height: auto;
+}
+
+.content .heading {
+    font-size: 48px;
+}
+
+.content .heading span {
+    color: var(--red);
+}
+
+hr {
+    background-color: var(--red);
+    height: 5px;
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.content .member .member_card {
+    display: flex;
+    padding: 0;
+    margin: auto;
+    width: 750px;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .member .member_card .image {
+    flex: 1 1 50px;
+    width: 300px;
+    height: 100px;
+}
+
+.content .member .member_card .info {
+    flex: 1 1 50px;
+}
+
+.content .member .member_card .name {
+    font-size: 32px;
+    color: var(--red);
+}
+
+.content .member #fajar {
+    text-align: left;
+}
+
+.content .member #rahmat {
+    text-align: right;
+}
+
+.content .member #reyhan {
+    text-align: left;
+}
+
+.content .member #julian {
+    text-align: right;
+}
+
+/* end of content */
+
+footer {
+    background-color: var(--footer);
+    font-weight: bolder;
+    color: var(--color);
+    position: relative;
+    bottom: 30px;
+}
+
+.logo-footer {
+    font-size: 70px;
+    text-align: left;
+}
+
+.logo-footer:hover{
+    color: rgb(83, 170, 251);
+    cursor: pointer
+}
+
+.about-us{
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+    left: 90px;
+}
+
+.about-us > h1 {
+    font-size: 28px;
+}
+
+.about-us > p {
+    text-align: center;
+    margin-left: 250px;
+    max-width: 600px;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+.sosmed {
+    position: relative;
+    text-align: center;
+    left: 100px;
+    bottom: 68px;
+}
+
+.sosmed > i {
+    font-size: 40px;
+    margin-right: 24px;
+}
+
+.sosmed > i:hover {
+    color: rgb(83, 170, 251);
+    cursor: pointer;
+}
