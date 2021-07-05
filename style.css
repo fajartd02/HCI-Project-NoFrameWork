@@ -204,7 +204,7 @@ footer {
     font-weight: bolder;
     color: var(--color);
     position: relative;
-    bottom: 30px;
+    padding-top: 30px;
 }
 
 .logo-footer {
@@ -226,12 +226,13 @@ footer {
 
 .about-us > h1 {
     font-size: 28px;
+    padding-left: 80px;
 }
 
 .about-us > p {
     text-align: center;
     margin-left: 250px;
-    max-width: 600px;
+    max-width: 800px;
     font-size: 20px;
     margin-top: 1px;
 }
@@ -239,7 +240,7 @@ footer {
 .sosmed {
     position: relative;
     text-align: center;
-    left: 100px;
+    left: 140px;
     bottom: 68px;
 }
 
