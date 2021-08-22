@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(img/city.png);
+    background-size: 105%;
+}
+
+#game {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #0099CC;
+}
+
+#point-display, #info {
+    padding-top: 10px;
+    width: 500px;
+    margin: auto;
+}
+
+#block {
+    width: 50px;
+    height: 500px;
+    background-color: lightgreen;
+    position: relative;
+    left: 500px;
+    animation: block 2.5s infinite linear;
+    border: 1px solid black;
+}
+
+#game-name {
+    width: 105px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+@keyframes block {
+    0%{left:500px}
+    100%{left:-50px}
+}
+
+#hole {
+    width: 52px;
+    height: 150px;
+    background-color: #0099CC;
+    position: relative;
+    top: -200px;
+    left: 500px;
+    animation: block 2.5s infinite linear;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /* opacity: 0.7; */
+}
+
+#bird {
+    width: 40px;
+    height: 28px;
+    /* background-color: orange; */
+    position: relative;
+    top: -400px;
+    left: 20px;
+    /* border-radius: 50%; */
+    background-image: url(img/flappy.png);
+    background-size: cover;
+}
