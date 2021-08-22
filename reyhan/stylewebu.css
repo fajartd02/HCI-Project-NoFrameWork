@@ -1,0 +1,191 @@
+@font-face{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'cerapro';
+    src: url(font/cera_pro_bold-webfont.woff);
+    font-style: normal;
+}
+
+body{
+
+    background-color: #272727;
+    width: 1850px;
+  height: 1700px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+ul.card
+{
+    font-family: cerapro;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .reyhan{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: cerapro;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 50px;
+    color: #fff;
+    border-radius: 40px;
+    font-family: cerapro;
+    font-size: 26px;
+    transition: ease-out 0.3s;
+}
+
+header ul li a:hover
+{
+    background: #fff;
+    color: #272727;
+    transition: ease-out 0.5s;
+}
+
+section
+{
+    position: absolute;
+    top: 400px;
+    right: 1050px;
+    justify-content: center;
+    align-items: center;
+    font-family: cerapro;
+    color: #fff;
+}
+
+#text
+{
+    position: absolute;
+    left: 460px;
+    font-size: 100px;
+}
+
+#nama
+{
+    position: absolute;
+    left: 460px;
+    font-size: 20px;
+}
+
+#tigad
+{
+    position: relative;
+    left: 540px;
+    top: 800px;
+    font-size: 70px;
+}
+
+#tigad1
+{
+    display: flex;
+    position: relative;
+    font-size: 25px;
+    left: 400px;
+    top: 800px;
+
+}
+
+#card
+{
+    display: flex;
+    position: absolute;
+    top: 1600px;
+    left: 5px;
+}
+
+ul.card
+{
+    font-family: cerapro;
+}
+
+.contact
+{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 1540px;
+    right: 1680px;
+    font-family: cerapro;
+    font-size: 30px;
+    color: #fff;
+}
+
+.foto
+{
+    display: flex;
+    position: absolute;
+    top: 920px;
+    right: 840px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform: 0.5s;
+}
+
+.foto:hover
+{
+    transform: scale(1.2);
+    transition: ease-in 0.2s;
+}
+
+.foto1
+{
+    right: 500px;
+    width: 240px;
+    height: 230px;
+    background-image: url(images/Floraexplorationfinalgraded.png);
+}
+
+.foto2
+{
+    right: 800px;
+    top: 880px;
+    width: 270px;
+    height: 290px;
+    background-image: url(images/selfbloom\ finished.png);
+}
+
+.foto3
+{
+    width: 240px;
+    height: 230px;
+    left: 500px;
+
+    background-image: url(images/flowerweirdfinal.png);
+}

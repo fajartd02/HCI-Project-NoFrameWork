@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Title Icon -->
+    <link rel="icon" href="Portofolio/assets/img/LogoJulian.PNG">
+
+    <title>Tic-Tac-Toe Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>TIC TAC YU!!!</h1>
+    </header>
+    <h4>"Play with your friends for the best experience"</h4>
+    <br>
+    <p>Player X Score</p>
+    <p class="p1Wins" id="p1Wins"></p>
+    <br>
+    <p>Player O Score</p>
+    <p class="p2Wins" id="p2Wins"></p>
+    <p class="player" id="player" style="margin-top: 25px;"></p>
+    <main>
+        <section class="board" id="board">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+    </main>
+    <div class="message" id="message">
+        <div data-message-text>Player x's the WINNER!!!</div>
+        <div class="tips" id="tips">It's must be 1 player to win if you want go to the next page.</div>
+        <button class="restart" id="restart">Restart</button>
+        <button class="next" id="next"><a href="Portofolio/portofolio.html">Next Page</a></button>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

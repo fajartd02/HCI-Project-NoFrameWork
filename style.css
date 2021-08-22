@@ -7,10 +7,12 @@
 
 /* Color Style */
 :root {
-    --main-bg: #e1e5ea;
+    --white: white;
     --footer: #e1e5ea;
-    --color: rgb(27, 27, 27);
+    --black: rgb(27, 27, 27);
     --red: crimson;
+    --blue: #1f253d;
+    --orange: #ff7d5d;
 }
 
 /* all styling  */
@@ -23,12 +25,12 @@
 }
 
 body {
-    background-color: var(--main-bg);
+    background-color: var(--white);
 }
 
 .max-width {
     max-width: 1300px;
-    padding: 0 40px;
+    padding: 0 0px;
     margin: auto;
 }
 
@@ -48,13 +50,13 @@ body {
 }
 
 .nav .logo a {
-    color: #fff;
-    font-size: 35px;
+    color: white;
+    font-size: 40px;
     font-weight: 700;
 }
 
 .nav .logo span {
-    color: var(--red);
+    color: var(--orange);
 }
 
 .nav .menu li {
@@ -68,29 +70,29 @@ body {
     padding: 6px 20px;
     color: white;
     border-radius: 20px;
-    font: 20px;
+    font-size: 20px;
     transition: ease-out 0.4s;
 }
 
 .nav .menu li a:hover {
-    color: var(--red);
+    color: var(--orange);
     transition: all 0.4s ease;
 }
 
 /* stick nav  */
 .nav.stick {
     padding: 15px 0;
-    background-color: var(--red);
+    background-color: var(--orange);
     transition: all 0.4s ease;
 }
 
 .nav.stick .logo span {
-    color: var(--color);
+    color: white;
     transition: all 0.4s ease;
 }
 
 .nav.stick .menu li a:hover {
-    color: black;
+    color: var(--blue);
 }
 
 /* end of nav styling */
@@ -98,33 +100,50 @@ body {
 /* home styling  */
 .home {
     display: flex;
-    background: url("image/home.jpeg") no-repeat center;
-    color: white;
-    height: 100vh;
+    justify-content: center;
+    margin: auto;
+    background: url("image/background2.png") no-repeat center;
+    color: black;
+    height: 120vh;
     min-height: 600px;
 }
 
 .home .max-width {
-    margin: auto 0 auto 110px;
+    margin: auto 0 auto 0;
 }
 
-.home .home-content .text-1 {
-    font-size: 40px;
+.home .home-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home .image {
+    flex: 1 1;
+}
+
+.home .home-content .greet, .home .home-content .text-1 {
+    font-size: 70px;
     font-weight: 600;
 }
 
 .home .home-content .text-2 {
-    font-size: 70px;
-    font-weight: 600;
+    padding-top: 10px;
+    color: var(--orange);
+    font-size: 25px;
 }
+
+.home .max-width .col {
+    width: calc(50% - 30px);
+}
+
 /* end of home styling */
 
 /* start of content */
 
 .content {
     text-align: center;
-    color: var(--main-bg);
-    background-color: var(--color);
+    background-color: var(--white);
     height: auto;
 }
 
@@ -134,17 +153,17 @@ body {
 }
 
 .content .heading span {
-    color: var(--red);
+    color: var(--orange);
 }
 
 hr {
-    background-color: var(--red);
+    background-color: var(--blue);
     height: 5px;
     width: 40%;
     margin: 20px auto;
     text-align: center;
     justify-content: center;
-    border: 1px solid var(--red);
+    border: 1px solid var(--blue);
 }
 
 .content .member .member_card {
@@ -166,6 +185,8 @@ hr {
 
 .content .member .member_card .image img {
     height: 300px;
+    border-radius: 99%;
+    border: 8px solid var(--blue);
 }
 
 .content .member .member_card .info {
@@ -174,7 +195,24 @@ hr {
 
 .content .member .member_card .name {
     font-size: 32px;
-    color: var(--red);
+    color: var(--orange);
+}
+
+.content .member a,
+.content .member a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.content .member .member_card:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.content .member .member_card {
+    transform: scale(1);
+    transition: transform 0.5s ease-out;
 }
 
 .content .member #fajar {
@@ -199,10 +237,158 @@ hr {
 
 /* end of content */
 
+/* contact part */
+
+.title {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    left: 50%;
+    height: 3px;
+    background-color: #000000;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.title::after {
+    content: "Let's Discuss";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 23px;
+    color: var(--orange);
+    padding: 5px;
+    background-color: white;
+    transform: translateX(-50%);
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact {
+    padding-top: 43px;
+    padding-bottom: 30px;
+}
+
+.contact-content .left .top {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left {
+    margin-top: -40px;
+}
+
+.contact .contact-content .col {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .right p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row-contact {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row-contact .info-contact {
+    margin-left: 23px;
+}
+
+.contact .contact-content .row-contact i {
+    font-size: 20px;
+    color: var(--orange);
+}
+
+.contact .contact-content .row-contact .info-contact .header {
+    font-weight: 600;
+}
+
+.contact .skills-content .row-contact #address {
+    font-size: 26px;
+}
+
+.right form .field input,
+.right form .contents textarea {
+    height: 40px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 0 12px;
+}
+
+.right form .field input:hover {
+    border-color: #000000;
+}
+
+.right form .contents textarea:hover {
+    border-color: #000000;
+}
+
+.right form .contents textarea {
+    padding-top: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.right .top {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.right .send button {
+    text-align: justify;
+    background-color: var(--orange);
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    /* margin-top: 18px; */
+    border-radius: 6px;
+    transition: all 0.4s ease;
+    border-color: var(--orange);
+}
+
+.right .send button:hover {
+    background-color: orangered;
+    border-color: orangered;
+    transition: all 0.4s ease;
+    color: white;
+    cursor: pointer;
+}
+
+/* end of contact part  */
+
 footer {
-    background-color: var(--footer);
+    background-color: var(--blue);
     font-weight: bolder;
-    color: var(--color);
+    color: var(--white);
     position: relative;
     padding-top: 30px;
 }
@@ -210,9 +396,11 @@ footer {
 .logo-footer {
     font-size: 70px;
     text-align: left;
+    transition: transform 0.2s;
 }
 
 .logo-footer:hover {
+    transform: scale(1.1);
     color: rgb(83, 170, 251);
     cursor: pointer;
 }

@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(78, 239, 245);
+}
+
+#score {
+    text-align: center;
+}
+
+#game {
+    margin-top: 100px;
+    height: 300px;
+    width: 600px;
+    margin: auto;
+    border: 2px solid rgb(0, 0, 0);
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+#dinosaur {
+    background-image: url('../img/dino.png');
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top: 225px;
+}
+
+#batu {
+    background-image: url('../img/rock.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 175px;
+    left: 550px;
+    animation: batu 1.4s infinite;
+}
+
+@keyframes batu {
+    0% {
+        left: 550px;
+    }
+    100% {
+        left: -50px;
+    }
+}
+
+.jump_animate {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0% {
+        top: 225px;
+    }
+    50% {
+        top: 75px;
+    }
+    75% {
+        top: 75px;
+    }
+    100% {
+        top: 225px;
+    }
+}
+
+#title {
+    text-align: center;
+}
+ 
+h3 {
+    text-align: center;
+}

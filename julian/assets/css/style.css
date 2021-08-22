@@ -1,0 +1,225 @@
+:root {
+    --white: #e1e8eb;
+    --grey: #ccc;
+    --dark: #343a40;
+    --purple: #7952b3;
+    --yellow: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", cursive;
+}
+
+body {
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    color: #e1e8eb;
+    background-color: var(--dark);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid var(--yellow);
+}
+
+header h1 {
+    font-size: 48px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-shadow: -8px 5px var(--purple);
+}
+
+h4 {
+    color: var(--yellow);
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-shadow: -6px 4px var(--dark);
+}
+
+h3 {
+    color: var(--white);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: var(--white);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+p.p1Wins,
+p.p2Wins {
+    color: var(--dark);
+    margin-top: 10px;
+}
+
+h4,
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.5 0.5 0%;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.tile {
+    position: relative;
+    border: 3px solid var(--yellow);
+    width: 100px;
+    padding-top: 100%;
+    cursor: pointer;
+}
+
+.tile.x,
+.tile.o {
+    cursor: not-allowed;
+}
+
+.tile:nth-child(1),
+.tile:nth-child(2) {
+    border-right: none;
+}
+
+.tile:nth-child(1),
+.tile:nth-child(2),
+.tile:nth-child(3) {
+    border-bottom: none;
+}
+
+.tile:nth-child(4),
+.tile:nth-child(5) {
+    border-right: none;
+}
+
+.tile:nth-child(4),
+.tile:nth-child(5),
+.tile:nth-child(6) {
+    border-bottom: none;
+}
+
+.tile:nth-child(7),
+.tile:nth-child(8) {
+    border-right: none;
+}
+
+.tile.x::after,
+.tile.x::before,
+.board.turn-x .tile:not(.x):not(.o):hover::after,
+.board.turn-x .tile:not(.x):not(.o):hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 15px;
+    background-color: var(--dark);
+    border-radius: 99px;
+}
+
+.tile.x::before,
+.board.turn-x .tile:not(.x):not(.o):hover::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.tile.x::after,
+.board.turn-x .tile:not(.x):not(.o):after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.tile.o::before,
+.board.turn-o .tile:not(.x):not(.o):hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55px;
+    height: 55px;
+    border: 14px solid var(--dark);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.board.turn-x .tile:not(.x):not(.o):hover::after,
+.board.turn-x .tile:not(.x):not(.o):hover::before {
+    background-color: var(--grey);
+}
+
+.board.turn-o .tile:not(.x):not(.o):hover::before {
+    border-color: var(--grey);
+}
+
+.message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 36px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.message button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 36px;
+    border-radius: 5px;
+}
+
+.message button.restart:hover {
+    background-color: var(--yellow);
+    color: var(--dark);
+    border-color: var(--yellow);
+}
+
+.message button.next:hover {
+    background-color: var(--purple);
+    color: var(--dark);
+    border-color: var(--purple);
+}
+
+.message button {
+    cursor: pointer;
+}
+
+.message button a {
+    text-decoration: none;
+}
+
+.message.show {
+    display: flex;
+}

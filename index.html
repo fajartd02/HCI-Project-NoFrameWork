@@ -5,18 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icon Title -->
+    <link rel="icon" href="image/icon.PNG">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawesome -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' rel='stylesheet'>
+
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' rel='stylesheet'>
+
+    <!-- Typed JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>Nevisco</title>
 </head>
 
 <body>
+    <!-- Navbar -->
     <div class="nav">
         <div class="max-width">
             <div class="logo"><a href="#">Nevis<span>co.</span></a></div>
@@ -25,84 +37,164 @@
                 <li><a href="#teams" class="point">Teams</a></li>
                 <li><a href="#contact" class="point">Contact</a></li>
             </ul>
-            <!-- <div class="menu-bar">
-                <i class="fas fa-bars"></i>
-            </div> -->
         </div>
     </div>
 
+    <!-- Home -->
     <div class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Welcome</div>
-                <div class="text-2">To our <span>Website</span></div>
+                <div class="col text">
+                    <div class="text-1"> <span class="greet"></span></div>
+                    <div class="text-2"> We create website, apps, with experiences people and we crafted in house by
+                        tightly integrated team of designer and web deverlopers.</div>
+                </div>
+                <div class="col image">
+                    <img src="image/image_transparant.png" alt="">
+                </div>
             </div>
         </div>
     </div>
-    <!-- Memember -->
+
+    <!-- Teams -->
     <div class="content" id="teams">
         <div class="max-width">
             <div class="heading">Our <span>Team</span></div>
             <hr>
             <div class="member">
-                <div class="member_card" id="fajar">
-                    <div class="image">
-                        <img src="image/member.png" alt="">
+                <a href="fajar/games.html">
+                    <div class="member_card" id="fajar">
+                        <div class="image">
+                            <img src="image/fajar.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3 class="name">Fajar Muhammad Hamka</h3>
+                            <p class="quotes">- 2440113616 -</p>
+                            <p class="quotes">"Problems won't be a problem as long as no one makes a fuss about it."</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <h3 class="name">Fajar Muhammad Hamka</h3>
-                        <p class="quotes">(He/His)</p>
-                        <p class="quotes"> </p>
-                    </div>
-                </div>
+                </a>
 
-                <div class="member_card" id="rahmat">
-                    <div class="info">
-                        <h3 class="name">Rahmat Syifana Jaelani</h3>
-                        <p class="quotes">(He/His)</p>
-                        <p class="quotes">Remember me!</p>
+                <a href="rahmat/flappy-bird.html">
+                    <div class="member_card" id="rahmat">
+                        <div class="info">
+                            <h3 class="name">Rahmat Syifana Jaelani</h3>
+                            <p class="quotes">- 2440113585 -</p>
+                            <p class="quotes">"With great power comes great responsibility."</p>
+                        </div>
+                        <div class="image">
+                            <img src="image/rahmat.png" alt="">
+                        </div>
                     </div>
-                    <div class="image">
-                        <img src="image/member.png" alt="">
-                    </div>
-                </div>
+                </a>
 
-                <div class="member_card" id="reyhan">
-                    <div class="image">
-                        <img src="image/member.png" alt="">
+                <a href="reyhan/websiteprac.html">
+                    <div class="member_card" id="reyhan">
+                        <div class="image">
+                            <img src="image/reyhan.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3 class="name">Reyhan Willy Tanuwijaya</h3>
+                            <p class="quotes">- 2440082522 -</p>
+                            <p class="quotes">"An investment in knowledge pays the best interest"</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <h3 class="name">Reyhan Willy</h3>
-                        <p class="quotes">(He/His)</p>
-                        <p class="quotes">Reyhan is a guy who </p>
-                    </div>
+                </a>
 
-                </div>
-
-                <div class="member_card" id="julian">
-                    <div class="info">
-                        <h3 class="name">Julian Alifirman Wardana</h3>
-                        <p class="quotes">(He/His)</p>
-                        <p class="quotes"> </p>
+                <a href="julian/game.html">
+                    <div class="member_card" id="julian">
+                        <div class="info">
+                            <h3 class="name">Julian Alifirman Wardana</h3>
+                            <p class="quotes">- 2440065264 -</p>
+                            <p class="quotes">"Giving a strong impact to others around us."</p>
+                        </div>
+                        <div class="image">
+                            <img src="image/julian.png" alt="">
+                        </div>
                     </div>
-                    <div class="image">
-                        <img src="image/member.png" alt="">
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
     </div>
 
-    <!-- Footer -->
-    <footer id="contact">
+    <hr>
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
         <div class="max-width">
-            <div class="logo-footer"> <a>Nevisco </a></div>
+            <div class="title">Interest with us ?</div>
+            <div class="contact-content">
+                <div class="col left">
+                    <div class="top">Contact Us</div>
+                    <div class="icons">
+                        <div class="row-contact">
+                            <i class="fas fa-user-alt"></i>
+                            <div class="info-contact">
+                                <div class="header">Company Name</div>
+                                <div class="details">Nevisco Company IT.</div>
+                            </div>
+                        </div>
+                        <div class="row-contact">
+                            <i class="fas fa-map-marker-alt" id="address"></i>
+                            <div class="info-contact">
+                                <div class="header">Address</div>
+                                <div class="details">Wangsakerta Street</div>
+                            </div>
+                        </div>
+                        <div class="row-contact">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info-contact">
+                                <div class="header">Email</div>
+                                <div class="details">Nevisco@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row-contact">
+                            <i class="fas fa-phone"></i>
+                            <div class="info-contact">
+                                <div class="header">Phone</div>
+                                <div class="details">+62214015367</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col right">
+                    <div class="top">Send an email</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="field subject">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="field contents">
+                                <textarea name="contents" id="massage" cols="30" rows="10"
+                                    placeholder="Contents"></textarea>
+                            </div>
+                            <div class="send">
+                                <button type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="max-width">
+            <a>
+                <div class="logo-footer">Nevisco</div>
+            </a>
             <div class="about-us">
                 <h1>ABOUT US</h1>
-                <p id="about-us-footer">asdorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem dolorum quas
-                    molestiae vitae tempore unde sunt animi blanditiis fuga ex nobis inventore modi culpa hic, nihil
-                    officiis sequi deleniti veniam.</p>
+                <p id="about-us-footer">We create website, apps, with experiences people and we crafted in house by
+                    tightly integrated team of designer and Web Deverlopers</p>
             </div>
 
             <div class="sosmed">
@@ -113,6 +205,7 @@
         </div>
     </footer>
 
+    <!-- Local Javascripts -->
     <script src="script.js"></script>
 </body>
 
